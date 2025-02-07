@@ -8,7 +8,7 @@ import puppeteer from "puppeteer";
             try {
                 const page = await browser.newPage();
         
-                // Increase timeout and wait for network idle
+                
                 await page.goto("https://www.fotmob.com/", { 
                     waitUntil: "networkidle0", 
                     timeout: 30000 
